@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+  
+<style>
+    /* CSS HEADER */
+        .my_cover {
+            width: 100%;
+            height: 440px;
+            object-fit: cover;
+           }
+           .container {
+            width: 100%;
+            height:440px;
+            position: relative;
+           }
+    /* CSS MAIN CONTENT */
+      .kadungan {
+                background-image: linear-gradient(rgb(227, 203, 107));
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+            }
+            .form {
+                border-radius: 5px;
+                width: 22%;
+                text-align: center;
+                padding: 10px;
+                margin-left: 2%;
+            }
+            .hantar {
+                width: 22%;
+                text-align: center;
+                padding: 10px;
+                margin-left: 2%;
+                background-color: rgb(221, 93, 136);
+                
+            }
+            .hantar:hover {
+                background-color: pink;
+            }
+            .button {
+            background-color: rgb(154, 38, 115);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-weight: var(--font-weight-medium);
+            }
+                .button:hover {
+      background-color: rgb(175, 22, 121); 
+      transform: scale(1.05);
+    }
+     .main-content {
+       display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      text-align: center;
+    }
+ 
+
+   
+     /*CSS PRODUCTS SECTION*/
+            .heading span{
+               color: var(--pink);
+            }
+            .products .box-container{
+               display: flex;
+               flex-wrap: wrap;
+               gap: 1.5rem;
+            }
+            .products .box-container .box{
+               flex:1 1 30rem ;
+               box-shadow: 0 .5rem 1.5rem  rgba(0, 0, 0,.1); 
+               border-radius: .5rem;              
+               border: 1rem solid rgba(0, 0, 0,.1);
+               position: relative;
+            }
+           .products .box-container .box .discount {
+            position: absolute;
+            top:1rem; left:1rem;
+            padding: 7rem 1rem;
+            font-size: 2rem;
+            color: var(--pink);
+            background: rgba(255, 51, 153,.05);
+            z-index: 1;
+            border-radius: .5rem;
+           }
+
+           .products .box-container .box .image {
+            position: relative;
+            text-align: center;
+            padding-top: 2rem;
+            overflow: hidden;
+
+           }
+
+           .products .box-container .box .image img{
+            height: 25rem;
+           }
+
+           .products .box-container .box:hover .image img{
+            transform: scale(1.1);
+           }
+           .products .box-container .box .image .icons{
+            position: absolute;
+            bottom: -7rem; left: 0; right: 0;
+            display: flex;
+           }
+            .products .box-container .box:hover .image .icons {
+             bottom:0;
+             }
+           .products .box-container .box .image .icons a{
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            width: 50%;
+            background:var(--pink);
+            color:#fff;
+           }
+           .products .box-container .box .image .icons .cart-btn{
+            border-left: 1rem solid #fff7;
+              border-right: 1rem solid #fff7;
+              width:100%;
+           }
+            .products .box-container .box .image .icons a:hover{
+             background: #333;
+
+              }
+                .products .box-container .box content{
+                padding:2rem;
+                text-align: center;
+                }
+                .products .box-container .box content h3{
+                font-size: 2.5rem;
+                color: var(--pink);
+                font-weight: bolder;
+                padding-top: 1rem;
+                }
+                .products .box-container .box content .price{
+                font-size: 2.5rem;
+                color: var(--pink);
+                font-weight: bolder;
+                padding-top: 1rem;
+                }
+                   .products .box-container .box content .price span{
+                font-size: 1.5rem;
+                color: #999;
+                font-weight: lighter;
+                text-decoration: line-through;
+                }
+    /* CSS FOOTER */
+       .kaki {
+                text-align: center;
+                background-color: indigo;
+                color: white;
+                border: solid black;
+                padding: 5px;
+            }
+            *{
+              box-sizing: border-box;
+              margin: 50;
+            }
+    
+         .teks{
+                text-align: center;
+                padding: 5px;
+                background-color: indigo;
+                color: white;
+                border: solid black;
+            }
+            *{
+              box-sizing: border-box;
+              margin: 50;
+            }
+         
+</style>
+<!--HEADER HTML-->
+   <center>
+  <div class="container">
+            <a href="">Header</a>
+            <img class="my_cover" src="florist.jpg"> 
+          </div>
+   </center>
+<!--MAIN CONTENT-->
+<center>
+    <div class="main-content">
+         <div class="kadungan">
+    <div class="left">
+      <p style="font-size: 40px; font-family: 'Courier New', Courier, monospace; color: black;">Selamat Datang Ke</p>
+            <p style="font-size: 40px; font-family: 'Courier New', Courier, monospace; color: black;">Florist Qadz</p>
+         <hr>
+    <form action="">
+                <!--Type email-->
+                <label> Enter email </label> <br><br>
+                <input type="text" name="email" placeholder="email">
+                <hr>
+                <!--Type password-->
+                 <label> Enter password </label> <br><br>
+                <input type="password" name="password" placeholder="password">
+                <!--Type submit-->
+                <input type="button" value="SUBMIT" class="button">
+    </center>
+           </form>
+         </div>
+
+<!--CONTENT-->    
+    <!-- products section starts -->
+     <section class="products" id="products">
+      
+      <h1 class="heading"> latest <span>products</span></h1>
+
+      <div class="box-container">
+
+         <div class="box">
+         <span class="discount">-10%</span>
+         <div class="image">
+            <img src="flower1.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+               <a href="#" class="cart-btn">add to cart</a>
+               <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+         <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+
+         <div class="box">
+         <span class="discount">-5%</span>
+         <div class="image">
+            <img src="flower2.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>               
+                 <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+         <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+
+          <div class="box">
+         <span class="discount">-15%</span>
+         <div class="image">
+            <img src="flower3.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                 <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+         <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+
+          <div class="box">
+         <span class="discount">-20%</span>
+         <div class="image">
+            <img src="flower4.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                 <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+                  <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+
+          <div class="box">
+         <span class="discount">-18%</span>
+         <div class="image">
+            <img src="flower5.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                 <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+         <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+
+          <div class="box">
+         <span class="discount">-25%</span>
+         <div class="image">
+            <img src="flower6.jpg" alt="">
+            <div class="icons">
+               <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="cart-btn">add to cart</a>
+                 <a href="#" class="fas fa-share"></a>
+            </div>
+         </div>
+         <div class="content">
+            <h3>Flower bouquet</h3>
+            <div class="price">RM 12.99 <span>RM 15.99</span></div>
+         </div>
+     </section>
+      <!-- products section ends --> 
+     
+<!--FOOTER-->
+ <div class="teks">
+           <font>TEKS</font>
+  <div class="kaki">
+            <font>Copyright &copy; Florist.CO 2025</font>
+         </div>
+ </div>
+</head>
+</html>
+    
